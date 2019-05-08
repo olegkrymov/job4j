@@ -5,7 +5,7 @@ package ru.job4j.converter;
  * Class Converter
  * @author Oleg Krymov
  * @since 08.05.2019
- *  * version 1
+ * version 1
  */
 public class Converter {
     /**
