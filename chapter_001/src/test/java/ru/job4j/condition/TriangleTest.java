@@ -1,10 +1,7 @@
 package ru.job4j.condition;
 
-import org.junit.Ignore;
+
 import org.junit.Test;
-import org.junit.experimental.categories.Categories;
-
-
 import static org.hamcrest.number.IsCloseTo.closeTo;
 import static org.junit.Assert.*;
 /**
@@ -32,16 +29,71 @@ public class TriangleTest {
 
     /**
      * Test метода exist.
+     * Треугольник создать невозможно.
+     * Сумма двух сторон равна третьей.
      */
     @Test
-    public void whenTreeTooOne() {
+    public void whenThreeTwoOne() {
         Triangle triangle = new Triangle();
-       boolean result= triangle.exist(3 , 2, 1);
-        // Задаем ожидаемый результат.
-       boolean expected = false;
-        //Проверяем соответствие результата и ожидаемого значения.
-        assertTrue(true);
+        assertFalse(triangle.exist(3,2,1));
     }
+
+    /**
+     * Test метода exist.
+     * Треугольник создать невозможно.
+     * Сумма двух сторон равна третьей.
+     */
+    @Test
+    public void whenOneTooTree() {
+        Triangle triangle = new Triangle();
+        assertFalse(triangle.exist(1,2,3));
+    }
+
+    /**
+     * Test метода exist.
+     * Треугольник создать невозможно.
+     * Сумма двух сторон равна третьей.
+     */
+    @Test
+    public void whenTooOneTree() {
+        Triangle triangle = new Triangle();
+        assertFalse(triangle.exist(2,1,3));
+
+    }
+
+    /**
+     * Test метода exist.
+     * Треугольник создать невозможно.
+     * Сумма двух сторон равна третьей.
+     */
+    @Test
+    public void whenTooTreeOne() {
+        Triangle triangle = new Triangle();
+        assertFalse(triangle.exist(2,3,1));
+    }
+
+    /**
+     * Test метода exist.
+     * Треугольник создать невозможно.
+     * Сумма двух сторон меньше третьей.
+     */
+    @Test
+    public void whenOneTreeOne() {
+        Triangle triangle = new Triangle();
+        assertFalse(triangle.exist(1,3,1));
+    }
+
+    /**
+     * Test метода exist.
+     * Треугольник создать возможно.
+     * Сумма любых двух сторон больше третьей.
+     */
+    @Test
+    public void whenFiveFourTree() {
+        Triangle triangle = new Triangle();
+        assertTrue(triangle.exist(5,4,3));
+    }
+
     /**
      * Test метода period.
      */
