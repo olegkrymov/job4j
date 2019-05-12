@@ -31,7 +31,8 @@ public class MultiMax {
      * @return максимум из трех чисел.
      */
     public int maxMax(int first, int second, int third) {
-        return new Max().max(first,second) >= third ? new Max().max(first,second) : third;
+        Max max = new Max();
+        return max.max(first,second) >= third ? max.max(first,second) : third;
     }
 
     /**
