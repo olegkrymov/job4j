@@ -24,7 +24,7 @@ public class MultiMax {
 
     /**
      * Метод maxMax возвращает максимальное число из first, second и third .
-     * Реализация с использованием тренарного оператора«?» и метода max класса Max.
+     * Реализация с использованием метода max класса Max.
      * @param first первое число.
      * @param second второе число.
      * @param third третье число.
@@ -32,7 +32,7 @@ public class MultiMax {
      */
     public int maxMax(int first, int second, int third) {
         Max max = new Max();
-        return max.max(first,second) >= third ? max.max(first,second) : third;
+        return max.max(max.max(first,second),third);
     }
 
     /**
