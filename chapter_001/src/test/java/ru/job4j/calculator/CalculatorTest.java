@@ -17,7 +17,7 @@ public class CalculatorTest {
     @Test
     public void whenAddOnePlusOneThenTwo() {
         Calculator calc = new Calculator();
-        double result = calc.add(1D,1D);
+        double result = calc.add(1D, 1D);
         double expected = 2D;
         assertThat(result, is(expected));
     }

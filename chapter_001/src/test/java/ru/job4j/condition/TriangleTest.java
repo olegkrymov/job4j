@@ -35,7 +35,7 @@ public class TriangleTest {
     @Test
     public void whenThreeTwoOne() {
         Triangle triangle = new Triangle();
-        assertFalse(triangle.exist(3,2,1));
+        assertFalse(triangle.exist(3, 2, 1));
     }
 
     /**
@@ -46,7 +46,7 @@ public class TriangleTest {
     @Test
     public void whenOneTooTree() {
         Triangle triangle = new Triangle();
-        assertFalse(triangle.exist(1,2,3));
+        assertFalse(triangle.exist(1, 2, 3));
     }
 
     /**
@@ -57,7 +57,7 @@ public class TriangleTest {
     @Test
     public void whenTooOneTree() {
         Triangle triangle = new Triangle();
-        assertFalse(triangle.exist(2,1,3));
+        assertFalse(triangle.exist(2, 1, 3));
 
     }
 
@@ -69,7 +69,7 @@ public class TriangleTest {
     @Test
     public void whenTooTreeOne() {
         Triangle triangle = new Triangle();
-        assertFalse(triangle.exist(2,3,1));
+        assertFalse(triangle.exist(2, 3, 1));
     }
 
     /**
@@ -80,7 +80,7 @@ public class TriangleTest {
     @Test
     public void whenOneTreeOne() {
         Triangle triangle = new Triangle();
-        assertFalse(triangle.exist(1,3,1));
+        assertFalse(triangle.exist(1, 3, 1));
     }
 
     /**
@@ -91,7 +91,7 @@ public class TriangleTest {
     @Test
     public void whenFiveFourTree() {
         Triangle triangle = new Triangle();
-        assertTrue(triangle.exist(5,4,3));
+        assertTrue(triangle.exist(5, 4, 3));
     }
 
     /**
@@ -100,10 +100,10 @@ public class TriangleTest {
     @Test
     public void whenTreeFourFive() {
         Triangle triangle = new Triangle();
-        double result= triangle.period(3 , 4, 5);
+        double result = triangle.period(3, 4, 5);
         // Задаем ожидаемый результат.
         double expected = 6;
         //Проверяем результат и ожидаемое значение.
-        assertThat(result,closeTo(expected, 0.1));
+        assertThat(result, closeTo(expected, 0.1));
     }
 }

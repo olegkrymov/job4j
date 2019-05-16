@@ -53,6 +53,6 @@ public class Triangle {
      * @return значения истина или ложь возможности построения треугольника.
      */
     public boolean exist(double a, double b, double c) {
-        return a < (b + c) && b < (a + c ) && c < (a + b);
+        return a < (b + c) && b < (a + c) && c < (a + b);
     }
 }

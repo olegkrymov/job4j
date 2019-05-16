@@ -15,11 +15,10 @@ public class Counter {
  * @param finish конец диапозона.
  * @return сумма всех четных чисел диапозона.
  */
-
-    public int add(int start, int finish) {
+        public int add(int start, int finish) {
         int sum = 0;
         for (int i = start; i <= finish; i++) {
-            if (i%2 ==0) {
+            if (i % 2 == 0) {
                 sum += i;
             }
         }

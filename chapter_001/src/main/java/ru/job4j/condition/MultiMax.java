@@ -32,7 +32,7 @@ public class MultiMax {
      */
     public int maxMax(int first, int second, int third) {
         Max max = new Max();
-        return max.max(max.max(first,second),third);
+        return max.max(max.max(first, second), third);
     }
 
     /**

@@ -22,7 +22,7 @@ public class CounterTest {
     @Test
     public void whenSumEvenNumbersFromOneToTenThenThirty() {
         Counter counter = new Counter();
-        int result = counter.add(1,10);
+        int result = counter.add(1, 10);
         assertThat(result, is(30));
     }
 
@@ -33,7 +33,7 @@ public class CounterTest {
     @Test
     public void whenSumEvenNumbersFrom57To72Then520() {
         Counter counter = new Counter();
-        int result = counter.add(57,72);
+        int result = counter.add(57, 72);
         assertThat(result, is(520));
     }
 
@@ -44,7 +44,7 @@ public class CounterTest {
     @Test
     public void whenSumEvenNumbersStartGreaterFinish() {
         Counter counter = new Counter();
-        int result = counter.add(27,15);
+        int result = counter.add(27, 15);
         assertThat(result, is(0));
     }
 
@@ -55,7 +55,7 @@ public class CounterTest {
     @Test
     public void whenSumEvenNumbersStartEqualFinishEven() {
         Counter counter = new Counter();
-        int result = counter.add(44,44);
+        int result = counter.add(44, 44);
         assertThat(result, is(44));
     }
 
@@ -66,7 +66,7 @@ public class CounterTest {
     @Test
     public void whenSumEvenNumbersStartEqualFinishUneven() {
         Counter counter = new Counter();
-        int result = counter.add(45,45);
+        int result = counter.add(45, 45);
         assertThat(result, is(0));
     }
 }
