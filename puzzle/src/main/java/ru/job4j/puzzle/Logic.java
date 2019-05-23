@@ -76,10 +76,10 @@ public class Logic {
             for (int cell = 0; cell != size; cell++) {
                 sumRow += table[row][cell];
                 sumCell += table[cell][row];
-                if (sumRow == size || sumCell == size) {
-                    result = true;
-                    break;
-                }
+            }
+            if (sumRow == size || sumCell == size) {
+                result = true;
+                break;
             }
         }
         return result;
