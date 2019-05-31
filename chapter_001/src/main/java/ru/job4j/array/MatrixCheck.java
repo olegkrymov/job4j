@@ -11,6 +11,8 @@ public class MatrixCheck {
 
     /**
      * Метод mono который принимает в себя квадратный boolean массив.
+     * Сначала мы проверяем на равенство значения диагонали слева направо,
+     * затем справа налево.
      * @param data  boolean массив.
      * @return true, если массив заполнен по диагоналям, либо значениями true, либо false.
      * false, если элементы массива имеют значения и true и false.
@@ -18,14 +20,12 @@ public class MatrixCheck {
      */
     public boolean mono(boolean[][] data) {
         boolean result = true;
-          for (int i = 0; i != data.length; i++) {
-              //проверяем на равенство значения диагонали слева направо
-              if (data[0][0] != data[i][i]) {
+          for (int index = 0; index != data.length; index++) {
+              if (data[0][0] != data[index][index]) {
                 result = false;
                 break;
               }
-              //проверяем на равенство значения диагонали справа налево
-              if (data[data.length - 1][0] != data[i][data.length - i - 1]) {
+              if (data[data.length - 1][0] != data[index][data.length - index - 1]) {
                   result = false;
                   break;
               }
