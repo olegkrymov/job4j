@@ -53,7 +53,7 @@ public class MaxTest {
     @Test
     public void whenMaxSecondInTree() {
         Max max = new Max();
-        int result = max.max(1, 2,0);
+        int result = max.max(1, 2, 0);
         assertThat(result, is(2));
     }
 
@@ -64,7 +64,7 @@ public class MaxTest {
     @Test
     public void whenMaxFirstInTree() {
         Max max = new Max();
-        int result = max.max(3, 2,1);
+        int result = max.max(3, 2, 1);
         assertThat(result, is(3));
     }
 
@@ -75,7 +75,7 @@ public class MaxTest {
     @Test
     public void whenMaxThirdInTree() {
         Max max = new Max();
-        int result = max.max(3, 2,5);
+        int result = max.max(3, 2, 5);
         assertThat(result, is(5));
     }
 
@@ -86,7 +86,7 @@ public class MaxTest {
     @Test
     public void whenEveryTreeIsEqual() {
         Max max = new Max();
-        int result = max.max(4, 4,4);
+        int result = max.max(4, 4, 4);
         assertThat(result, is(4));
     }
 
@@ -97,7 +97,7 @@ public class MaxTest {
     @Test
     public void whenMaxSecondInFour() {
         Max max = new Max();
-        int result = max.max(1, 4,0,3);
+        int result = max.max(1, 4, 0, 3);
         assertThat(result, is(4));
     }
 
@@ -108,7 +108,7 @@ public class MaxTest {
     @Test
     public void whenMaxFirstInFour() {
         Max max = new Max();
-        int result = max.max(3, 2,1,0);
+        int result = max.max(3, 2, 1, 0);
         assertThat(result, is(3));
     }
 
@@ -119,7 +119,7 @@ public class MaxTest {
     @Test
     public void whenMaxThirdInFour() {
         Max max = new Max();
-        int result = max.max(3, 2,5,1);
+        int result = max.max(3, 2, 5, 1);
         assertThat(result, is(5));
     }
 
@@ -130,7 +130,7 @@ public class MaxTest {
     @Test
     public void whenMaxFourthInFour() {
         Max max = new Max();
-        int result = max.max(3, 2,5,7);
+        int result = max.max(3, 2, 5, 7);
         assertThat(result, is(7));
     }
 
@@ -141,7 +141,7 @@ public class MaxTest {
     @Test
     public void whenEveryFourIsEqual() {
         Max max = new Max();
-        int result = max.max(7, 7,7,7);
+        int result = max.max(7, 7, 7, 7);
         assertThat(result, is(7));
     }
 }

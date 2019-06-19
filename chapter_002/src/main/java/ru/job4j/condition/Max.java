@@ -35,10 +35,10 @@ public class Max {
      * @param first первое число.
      * @param second второе число.
      * @param third третье число.
-     * @param four четвертое число.
+     * @param fourth четвертое число.
      * @return максимум из четырех чисел.
      */
-    public int max(int first, int second, int third, int four) {
-        return max(first, second,third) >= four ? max(first, second, third) : four;
+    public int max(int first, int second, int third, int fourth) {
+        return max(first, second, third) >= fourth ? max(first, second, third) : fourth;
     }
 }

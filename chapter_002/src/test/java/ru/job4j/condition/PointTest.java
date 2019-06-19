@@ -68,7 +68,7 @@ public class PointTest {
      */
     @Test
     public void whenCheckItselfThreeD() {
-        Point point = new Point(0, 0,0);
+        Point point = new Point(0, 0, 0);
         double result = point.distance3d(point);
         assertThat(result, is(0D));
     }
@@ -78,9 +78,9 @@ public class PointTest {
      */
     @Test
     public void whenShowInfoTreeD() {
-        Point first = new Point(1, 1,1);
+        Point first = new Point(1, 1, 1);
         first.info3d();
-        Point second = new Point(2, 2,2);
+        Point second = new Point(2, 2, 2);
         second.info3d();
     }
 }
